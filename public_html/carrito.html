@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hypervision - Carrito / Cotización</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="carrito-page">
+            <h1>Carrito de Compras</h1>
+            <table class="carrito-tabla">
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Nombre</th>
+                        <th>Precio</th>
+                        <th>Cantidad</th>
+                        <th>Subtotal</th>
+                        <th></th>
+                    </tr>
+                </thead>
+                <tbody id="carrito-body"></tbody>
+            </table>
+            <div class="total-container">
+                <h2>Total: <span id="carrito-total">S/ 0</span></h2>
+                <div class="carrito-buttons">
+                    <button class="btn-empty" onclick="vaciarCarrito()">Vaciar carrito</button>
+                    <button class="btn-checkout" id="btn-checkout">Ir al Checkout</button>
+                </div>
+            </div>
+        </main>
+        
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>

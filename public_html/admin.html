@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Administración de Productos - HyperVision</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container mt-20">
+            <h1 class="text-center">Panel de Administración de Productos</h1>
+            <div class="flex-actions mb-20">
+                <button id="btn-nuevo-producto" class="btn-primary">Nuevo Producto</button>
+                <div class="sort-controls">
+                    <label for="ordenar-select">Ordenar por:</label>
+                    <select id="ordenar-select" onchange="ordenarProductos(this.value)">
+                        <option value="id-asc">ID (Ascendente)</option>
+                        <option value="nombre-asc">Nombre (A-Z)</option>
+                        <option value="precio-asc">Precio (Menor a Mayor)</option>
+                        <option value="precio-desc">Precio (Mayor a Menor)</option>
+                    </select>
+                </div>
+            </div>
+            <div class="tabla-admin-wrapper">
+                <table id="tabla-productos-admin">
+                    <thead>
+                        <tr>
+                            <th>ID</th>
+                            <th>Imagen</th>
+                            <th>Nombre</th>
+                            <th>Categoría</th>
+                            <th>Precio</th>
+                            <th>Destacado</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody id="productos-admin-body">
+                        </tbody>
+                </table>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+
+        <div id="crud-modal" class="modal">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal('#crud-modal')">&times;</span>
+                <h2 id="modal-title">Insertar Nuevo Producto</h2>
+
+                <form id="producto-form">
+                    <input type="hidden" id="producto-id" name="id">
+
+                    <div class="form-group">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="precio">Precio (S/):</label>
+                        <input type="number" id="precio" name="precio" step="0.01" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="imagen">Nombre de Archivo de Imagen:</label>
+                        <input type="text" id="imagen" name="imagen" placeholder="ej: monitor-gamer.jpg" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="categoria">Categoría:</label>
+                        <select id="categoria" name="categoria" required>
+                            <option value="">-- Cargando categorías... --</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="marca">Marca:</label>
+                        <input type="text" id="marca" name="marca" required>
+                    </div>
+
+                    <div class="form-group-checkbox">
+                        <input type="checkbox" id="destacado" name="destacado">
+                        <label for="destacado">Marcar como Destacado</label>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="caracteristicas">Características (JSON o texto):</label>
+                        <textarea id="caracteristicas" name="caracteristicas" rows="3" placeholder='{"tipo": "Mecánico", "color": "Negro"}'></textarea>
+                    </div>
+
+                    <button type="submit" class="btn-primary">Guardar Producto</button>
+                </form>
+            </div>
+        </div>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+        <script src="js/admin.js"></script>
+    </body>
+</html>

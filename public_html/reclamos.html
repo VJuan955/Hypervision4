@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hypervision - Reclamos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="complaints-hero">
+                <h1>Libro de Reclamaciones</h1>
+            </section>
+            <section class="complaints-form-section">
+                <form id="reclamos-form" class="complaints-form">
+                    <fieldset>
+                        <legend>Datos personales</legend>
+                        <div class="form-group">
+                            <label for="reclamo-nombre">Nombres:</label>
+                            <input type="text" id="reclamo-nombre" name="nombres" placeholder="Ingrese su nombre completo" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reclamo-apellidos">Apellidos:</label>
+                            <input type="text" id="reclamo-apellidos" name="apellidos" placeholder="Ingrese sus apellidos" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reclamo-direccion">Dirección domiciliaria:</label>
+                            <input type="text" id="reclamo-direccion" name="direccion" placeholder="Ingrese su dirección completa" required>
+                        </div>
+                        <small>Seleccione el tipo de vía:</small><br>
+                        <div class="checkbox-group">
+                            <label><input type="radio" name="tipo_via" value="calle" required> Calle</label>
+                            <label><input type="radio" name="tipo_via" value="urb"> Urbanización</label>
+                            <label><input type="radio" name="tipo_via" value="pasaje"> Pasaje</label>
+                            <label><input type="radio" name="tipo_via" value="jiron"> Jirón</label>
+                        </div>
+                        <div class="form-group">
+                            <label for="reclamo-email">Correo electrónico:</label>
+                            <input type="email" id="reclamo-email" name="email" placeholder="Ingrese su correo electrónico" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="reclamo-telefono">Número de teléfono:</label>
+                            <input type="tel" id="reclamo-telefono" name="telefono" placeholder="Ingrese su número de teléfono">
+                        </div>
+                        <div class="form-group">
+                            <label for="reclamo-anio">Año de nacimiento:</label>
+                            <input type="number" id="reclamo-anio" name="anio_nacimiento" min="1900" max="2025">
+                        </div>
+                        <div class="form-group">
+                            <label for="reclamo-fecha">Fecha de nacimiento:</label>
+                            <input type="date" id="reclamo-fecha" name="fecha_nacimiento">
+                        </div>
+                        <div class="form-group">
+                            <label for="reclamo-sexo">Sexo:</label>
+                            <select id="reclamo-sexo" name="sexo">
+                                <option value="masculino">Masculino</option>
+                                <option value="femenino">Femenino</option>
+                                <option value="otro">Otro</option>
+                                <option value="prefiero_no_decirlo">Prefiero no decirlo</option>
+                            </select>
+                        </div>
+                    </fieldset>
+                    <fieldset>
+                        <legend>Descripción del Reclamo/Queja</legend>
+                        <div class="form-group">
+                            <label for="reclamo-mensaje">Escriba su mensaje:</label>
+                            <textarea id="reclamo-mensaje" name="mensaje" rows="5" required></textarea>
+                        </div>
+                    </fieldset>
+                    <button type="submit" class="btn-primary">Enviar reclamo</button>
+                </form>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>

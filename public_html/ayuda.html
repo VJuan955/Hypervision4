@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hypervision - Ayuda</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1>Centro de Ayuda y Soporte</h1>
+                <p class="lead-text">Encuentra respuestas rápidas a tus preguntas más frecuentes sobre pedidos, pagos y garantías.</p>
+                <section class="faq-list">
+                    <h2 tabindex="0">Preguntas Frecuentes (FAQ)</h2>
+                    <details class="faq-item">
+                        <summary><h3>¿Qué métodos de pago aceptan en Hypervision?</h3></summary>
+                        <div class="faq-content">
+                            <p>Aceptamos una amplia variedad de métodos de pago seguros para tu comodidad:</p>
+                            <ul>
+                                <li><strong>Tarjetas:</strong> Crédito y Débito (Visa, Mastercard, American Express).</li>
+                                <li><strong>Pagos Móviles:</strong> Aceptamos pagos directos vía Yape y Plin.</li>
+                                <li><strong>Otros:</strong> Transferencias bancarias directas (BCP, Interbank).</li>
+                            </ul>
+                            <p>Tu información de pago está protegida mediante encriptación SSL.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary><h3>¿Los productos vendidos tienen garantía oficial?</h3></summary>
+                        <div class="faq-content">
+                            <p>Sí, absolutamente. <strong>Todos nuestros productos</strong> son nuevos y cuentan con la garantía oficial directamente del fabricante, la cual varía entre <strong>6 y 12 meses</strong> según la categoría del equipo.</p>
+                            <p>Para hacer uso de la garantía, por favor, ten a la mano tu factura de compra.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary><h3>¿Realizan envíos a provincia (nivel nacional)? ¿Cuál es el costo?</h3></summary>
+                        <div class="faq-content">
+                            <p>Sí, realizamos envíos a <strong>todo el territorio nacional</strong>. Trabajamos con socios logísticos confiables como <strong>Olva Courier</strong> y <strong>DHL</strong> para asegurar la entrega segura de tus equipos.</p>
+                            <p>El costo y tiempo de envío se calcula automáticamente durante el proceso de <strong>checkout</strong> basándose en la dirección de destino y el peso total del pedido.</p>
+                        </div>
+                    </details>
+                    <details class="faq-item">
+                        <summary><h3>¿Cómo funciona la política de devolución o cambio de un producto?</h3></summary>
+                        <div class="faq-content">
+                            <p>Puedes solicitar una devolución o cambio dentro de los <strong>primeros 7 días</strong> posteriores a la entrega. Es indispensable que el producto se encuentre en su empaque original, sellado y sin haber sido usado. Por favor, revisa nuestra sección de <a href="terminos.html#clausula-devoluciones">Términos y Condiciones (Cláusula 6)</a> para el proceso detallado.</p>
+                        </div>
+                    </details>
+                </section>
+                <section class="help-cta mt-40 text-center">
+                    <h2 tabindex="0">¿Aún Necesitas Ayuda Personalizada?</h2>
+                    <p>Si las preguntas frecuentes no han resuelto tu duda, nuestro equipo de soporte está listo para asistirte:</p>
+                    <p class="contact-info">
+                        Envíanos un correo a: <strong>soporte@hypervision.com</strong>
+                    </p>
+                    <a href="contacto.html" class="btn btn-primary btn-lg mt-20">Ir a la Sección de Contacto</a>
+                </section>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>

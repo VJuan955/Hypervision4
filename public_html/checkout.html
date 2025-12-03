@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hypervision - Checkout</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="checkout-page">
+            <h1>Finalizar Compra</h1>
+            <section class="resumen-section">
+                <h2>Resumen del pedido</h2>
+                <table class="carrito-tabla">
+                    <thead>
+                        <tr>
+                            <th>Producto</th>
+                            <th>Nombre</th>
+                            <th>Cant.</th>
+                            <th>Precio</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tbody id="checkout-body"></tbody>
+                </table>
+                <div class="total-container">
+                    <h2>Total: <span id="checkout-total">S/ 0</span></h2>
+                </div>
+            </section>
+            <section class="form-section">
+                <h2>Datos del comprador</h2>
+                <form id="checkout-form">
+                    <label>
+                        Nombre completo:
+                        <input type="text" name="nombre" required>
+                    </label>
+                    <label>
+                        Correo electrónico:
+                        <input type="email" name="email" required>
+                    </label>
+                    <label>
+                        Teléfono:
+                        <input type="text" name="telefono" required>
+                    </label>
+                    <label>
+                        Dirección:
+                        <input type="text" name="direccion" required>
+                    </label>
+                    <label>
+                        Método de pago:
+                        <select name="pago" required>
+                            <option value="">Seleccione</option>
+                            <option value="tarjeta">Tarjeta de crédito/débito</option>
+                            <option value="yape">Yape</option>
+                            <option value="plin">Plin</option>
+                            <option value="transferencia">Transferencia bancaria</option>
+                        </select>
+                    </label>
+                    <button type="submit" class="btn-finalizar">Confirmar pedido</button>
+                </form>
+                <div id="mensaje-exito" class="oculto">
+                    <h2>¡Pedido realizado con éxito!</h2>
+                    <p>Gracias por tu compra. Te enviaremos un correo con los detalles del pedido.</p>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>

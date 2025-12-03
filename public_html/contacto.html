@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hypervision - Contacto</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+        
+        <main class="main-content"> <h1>Contacto</h1>
+            <div>
+                <h2>¿Necesitas ayuda?</h2>
+                <p>Estamos aquí para resolver cualquier consulta sobre productos, compras o envíos.</p>
+
+                <h3>Información de contacto</h3>
+                <ul>
+                    <li><strong>Correo:</strong> soporte@hypervision.com</li>
+                    <li><strong>Teléfono:</strong> +51 999 999 999</li>
+                    <li><strong>Horario:</strong> Lunes a Sábado, 9:00 a 18:00</li>
+                </ul>
+                <h3>Formulario de contacto</h3>
+                <form id="contacto-form">
+                    <div class="form-group">
+                        <label for="nombre-contacto">Nombre completo</label>
+                        <input type="text" id="nombre-contacto" name="nombre_completo" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email-contacto">Correo electrónico</label>
+                        <input type="email" id="email-contacto" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="mensaje-contacto">Mensaje</label>
+                        <textarea id="mensaje-contacto" name="mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Enviar mensaje</button>
+                </form>
+                <h3>Nuestra ubicación</h3>
+                <p>Av. José Pardo, Lima – Perú.</p>
+                <div class="map-responsive">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3900.5654529337575!2d-77.03759718465983!3d-12.146608546733221!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105b81a8c3d9179%3A0xc6829e16d41829e2!2sAv.%20Jos%C3%A9%20Pardo%2C%20Miraflores%2015074%2C%20Per%C3%BA!5e0!3m2!1ses-419!2spe!4v1633535353535!5m2!1ses-419!2spe">
+                    </iframe>
+                </div>
+                </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </footer>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>

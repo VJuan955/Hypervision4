@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hypervision - Inicio</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <section class="hero centered-hero">
+                <div class="hero-content">
+                    <h1>Bienvenido a <strong>Hypervision</strong> 📸</h1>
+                    <p class="tagline">Equipos audiovisuales profesionales, cámaras, drones y accesorios de última generación al mejor precio.</p>
+                    <a href="productos.html" class="btn btn-primary btn-lg">
+                        Ver Catálogo Completo →
+                    </a>
+                </div>
+            </section>
+            <section class="destacados">
+                <h2>Productos Destacados</h2>
+                <div id="destacados-container"></div>
+            </section>
+            <section class="ventajas">
+                <div class="container">
+                    <h2>¿Por qué elegir <strong>Hypervision</strong>>?</h2>
+                    <br>
+                    <div class="carousel-container">
+                        <div class="carousel-track">
+                            <div class="carousel-slide">
+                                <span class="icon-lg">📸</span>
+                                <h3>Equipos de Alta Gama</h3>
+                                <p>Cámaras, drones y accesorios profesionales para fotógrafos, creadores y cineastas.</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <span class="icon-lg">🛡️</span>
+                                <h3>Garantía y Soporte</h3>
+                                <p>Todos nuestros productos cuentan con garantía oficial del fabricante y soporte técnico dedicado.</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <span class="icon-lg">🚚</span>
+                                <h3>Entrega a Nivel Nacional</h3>
+                                <p>Procesamiento rápido y envío seguro a tu destino, sin importar dónde te encuentres.</p>
+                            </div>
+                            <div class="carousel-slide">
+                                <span class="icon-lg">💳</span>
+                                <h3>Métodos de Pago Seguros</h3>
+                                <p>Transacciones protegidas con las principales plataformas de pago del mercado.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>

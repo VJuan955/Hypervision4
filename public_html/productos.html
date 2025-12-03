@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hypervision - Productos</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <h1>Catálogo de Productos</h1>
+            <p>Explora todas nuestras categorías de cámaras, drones, accesorios y monitores profesionales.</p>
+            <div class="filtros">
+                <h2>Buscar y Filtrar</h2>
+                <input type="text" id="buscador" placeholder="Buscar producto...">
+                <select id="filtro-categoria">
+                    <option value="todos">Todas las categorías</option>
+                    <option value="accesorios">Accesorios</option>
+                    <option value="camaras-digitales">Cámaras Digitales</option>
+                    <option value="camaras-video">Cámaras de Video</option>
+                    <option value="drones">Drones</option>
+                    <option value="ecrans">Ecrans</option>
+                </select>
+                <select id="filtro-marca">
+                    <option value="todas">Todas las marcas</option>
+                    <option value="Canon">Canon</option>
+                    <option value="Nikon">Nikon</option>
+                    <option value="Sony">Sony</option>
+                    <option value="FUJIFILM">FUJIFILM</option>
+                    <option value="DJI">DJI</option>
+                    <option value="NEEWER">NEEWER</option>
+                    <option value="ULANZI">ULANZI</option>
+                    <option value="osee">osee</option>
+                    <option value="VILTROX">VILTROX</option>
+                    <option value="FEELWORLD">FEELWORLD</option>
+                </select>
+                <select id="filtro-precio">
+                    <option value="todos">Todos los precios</option>
+                    <option value="0-500">S/ 0 - 500</option>
+                    <option value="500-1500">S/ 500 - 1500</option>
+                    <option value="1500-4000">S/ 1500 - 4000</option>
+                    <option value="4000-10000">S/ 4000 - 10000</option>
+                    <option value="10000-mas">Más de S/ 10000</option>
+                </select>
+            </div>
+            <div id="productos-container"></div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>

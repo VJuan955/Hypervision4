@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <title>Hypervision - Blog & Noticias</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/base.css">
+        <link rel="stylesheet" href="css/componentes.css">
+    </head>
+    <body>
+        <header>
+            <nav class="nav-bar">
+                <a href="index.html" class="logo">Hypervision</a>
+                <button id="nav-toggle" aria-expanded="false">☰</button>
+                <ul id="nav-menu" class="menu">
+                    <li><a href="index.html">Inicio</a></li>
+                    <li><a href="productos.html">Productos</a></li>
+                    <li><a href="blog.html">Blog</a></li>
+                    <li><a href="contacto.html">Contacto</a></li>
+                    <li><a href="carrito.html">Carrito (<span id="cart-count">0</span>)</a></li>
+                    <li><a href="login.html" id="admin-access-link">Admin</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main>
+            <div class="container">
+                <h1>Blog Audiovisual 💡</h1>
+                <p class="lead-text">Noticias, reviews y tutoriales sobre fotografía, video y tecnología audiovisual para creadores de contenido y profesionales.</p>
+                <div class="grid-products" id="blog-posts-container"> 
+                    <article class="card product-card"> 
+                        <img src="img/blog-camara.jpg" alt="Persona usando una cámara">
+                        <div class="card-body">
+                            <h2 class="card-title">Cómo elegir una cámara en 2025: Sensores y Presupuesto</h2>
+                            <div class="post-meta">
+                                <small>Publicado: 15 Nov, 2025 | Autor: Equipo Hypervision</small>
+                            </div>
+                            <p class="card-excerpt">Los sensores APS-C y Full Frame dominan el mercado. Te explicamos cuál necesitas según tu tipo de proyecto y el mejor equilibrio entre calidad y precio.</p>
+                            <a href="404.html" class="btn btn-readmore">Leer Artículo Completo &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="card product-card"> 
+                        <img src="img/blog-drone.jpg" alt="Un dron volando">
+                        <div class="card-body">
+                            <h2 class="card-title">Guía de drones para principiantes: ¿Qué comprar y cómo volar seguro?</h2>
+                            <div class="post-meta">
+                                <small>Publicado: 01 Nov, 2025 | Autor: Alex V.</small>
+                            </div>
+                            <p class="card-excerpt">Antes de volar un dron, asegúrate de conocer las regulaciones locales, las características clave como el tiempo de vuelo y los sistemas de seguridad.</p>
+                            <a href="404.html" class="btn btn-readmore">Leer Artículo Completo &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="card product-card"> 
+                        <img src="img/blog-accesorios.jpg" alt="trípode generico">
+                        <div class="card-body">
+                            <h2 class="card-title">Accesorios esenciales para grabar video profesional con poco presupuesto</h2>
+                            <div class="post-meta">
+                                <small>Publicado: 25 Oct, 2025 | Autor: Soporte Técnico</small>
+                            </div>
+                            <p class="card-excerpt">Un trípode estable, un buen micrófono direccional, luz LED bicolor y batería adicional son los básicos para cualquier grabación de alta calidad.</p>
+                            <a href="404.html" class="btn btn-readmore">Leer Artículo Completo &rarr;</a>
+                        </div>
+                    </article>
+                    <article class="card product-card"> 
+                        <img src="img/blog-edicion.jpg" alt="Pantalla de monitor">
+                        <div class="card-body">
+                            <h2 class="card-title">Monitores 4K vs. 8K: ¿Vale la pena la inversión para edición?</h2>
+                            <div class="post-meta">
+                                <small>Publicado: 10 Oct, 2025 | Autor: I+D Hypervision</small>
+                            </div>
+                            <p class="card-excerpt">Analizamos la diferencia de color, espacio de trabajo y rendimiento al editar contenido de alta resolución en monitores profesionales.</p>
+                            <a href="404.html" class="btn btn-readmore">Leer Artículo Completo &rarr;</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </main>
+
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-col">
+                    <h3>Hypervision</h3>
+                    <p>© 2025 Hypervision — Todos los derechos reservados</p>
+                </div>
+                <div class="footer-col">
+                    <h3>Empresa</h3>
+                    <ul>
+                        <li><a href="nosotros.html">Nosotros</a></li>
+                        <li><a href="reclamos.html">Reclamos</a></li>
+                        <li><a href="terminos.html">Términos y Condiciones</a></li>
+                        <li><a href="ayuda.html">Ayuda</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h3>Accesos</h3>
+                    <ul>
+                        <li><a href="productos.html">Productos</a></li>
+                        <li><a href="blog.html">Blog</a></li>
+                        <li><a href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </footer>
+        
+        <script src="js/dom.js"></script>
+        <script src="js/clases.js"></script>
+        <script src="js/productos.js"></script>
+        <script src="js/carrito.js"></script>
+        <script src="js/validacion.js"></script>
+    </body>
+</html>
